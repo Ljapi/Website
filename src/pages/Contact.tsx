@@ -66,7 +66,7 @@ const Contact = () => {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Visit Our Location</h2>
               <div className="rounded-xl overflow-hidden shadow-md">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.1234567890!2d8.1234567!3d49.9876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzE1LjYiTiA4wrAwNyc0NS4wIkU!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde"
+                  src="https://www.google.com/maps?q=Pariserstraße+4a,+55270+Klein-Winternheim,+Deutschland&output=embed"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}

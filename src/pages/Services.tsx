@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ServiceCard from '../components/ServiceCard'
 
 const Services = () => {
@@ -78,12 +79,12 @@ const Services = () => {
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8">
             Kontaktieren Sie uns noch heute und lassen Sie uns gemeinsam Ihre Ziele erreichen.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-block bg-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
           >
             Jetzt Kontakt aufnehmen
-          </a>
+          </Link>
         </div>
       </section>
     </div>
