@@ -35,14 +35,15 @@ const MobileMenu = ({ isOpen, onClose, navLinks, isActive }: MobileMenuProps) =>
         className={`fixed top-20 left-0 right-0 bg-white shadow-xl z-40 md:hidden transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
+        style={{ willChange: 'transform' }}
       >
-        <div className="px-4 py-6 space-y-2">
+        <div className="px-4 sm:px-6 py-6 space-y-2">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               onClick={onClose}
-              className={`block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
+              className={`block px-4 py-3 rounded-lg text-sm sm:text-base font-medium transition-all duration-200 ${
                 isActive(link.path)
                   ? 'text-blue-600 bg-blue-50'
                   : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'

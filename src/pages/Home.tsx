@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center text-white overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center text-white overflow-hidden py-32 md:py-48">
         {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -46,23 +46,25 @@ const Home = () => {
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
         
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up">
-            M&N Deine Handwerker
-          </h1>
-          <p className="text-xl sm:text-2xl lg:text-3xl text-white mb-8 max-w-3xl mx-auto animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
-            Professionelle Handwerksdienstleistungen für Ihr Zuhause
-          </p>
-          <p className="text-lg sm:text-xl text-gray-100 mb-12 max-w-2xl mx-auto animate-slide-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
-            Zuverlässigkeit, Qualität und Präzision – Ihre Handwerker für alle Aufgaben
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-xl animate-slide-up"
-            style={{ animationDelay: '0.3s' }}
-          >
-            Kontakt aufnehmen
-          </Link>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in w-full">
+          <div className="max-w-2xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
+              M&N Deine Handwerker
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 mx-auto animate-slide-up drop-shadow-lg" style={{ animationDelay: '0.1s' }}>
+              Professionelle Handwerksdienstleistungen für Ihr Zuhause
+            </p>
+            <p className="text-sm sm:text-base md:text-lg text-gray-100 mb-12 mx-auto animate-slide-up drop-shadow-md" style={{ animationDelay: '0.2s' }}>
+              Zuverlässigkeit, Qualität und Präzision – Ihre Handwerker für alle Aufgaben
+            </p>
+            <Link
+              to="/contact"
+              className="inline-block bg-white text-blue-600 px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-xl animate-slide-up"
+              style={{ animationDelay: '0.3s' }}
+            >
+              Kontakt aufnehmen
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -70,16 +72,16 @@ const Home = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Willkommen bei M&N Deine Handwerker
             </h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
               Wir sind ein modernes Dienstleistungsunternehmen, das sich auf Exzellenz und 
               Kundenzufriedenheit konzentriert. Mit langjähriger Erfahrung und einem 
               engagierten Team bieten wir maßgeschneiderte Lösungen für Ihre individuellen 
               Bedürfnisse.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
               Unsere Mission ist es, Unternehmen dabei zu helfen, ihre Ziele zu erreichen 
               und nachhaltig zu wachsen. Wir kombinieren bewährte Methoden mit innovativen 
               Ansätzen, um optimale Ergebnisse zu erzielen.
@@ -92,10 +94,10 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Unsere Leistungen
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
               Entdecken Sie unsere vielfältigen Dienstleistungen, die Ihr Unternehmen voranbringen
             </p>
           </div>

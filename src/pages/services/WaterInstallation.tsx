@@ -22,8 +22,8 @@ const WaterInstallation = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-6">Water Installation</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Water Installation</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
             Professionelle Wasserinstallationen für Ihr Zuhause oder Unternehmen
           </p>
         </div>
@@ -33,13 +33,13 @@ const WaterInstallation = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Über unsere Wasserinstallationen</h2>
-            <p className="text-lg text-gray-600 leading-relaxed mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Über unsere Wasserinstallationen</h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
               Wir bieten umfassende Wasserinstallationsdienstleistungen für private und gewerbliche 
               Kunden. Unser erfahrenes Team sorgt für eine professionelle Planung, Installation 
               und Wartung Ihrer Wassersysteme.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-4">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
               Von der Installation neuer Wasserleitungen bis zur Reparatur und Modernisierung 
               bestehender Systeme – wir stehen Ihnen mit unserem Know-how zur Verfügung.
             </p>
@@ -56,7 +56,7 @@ const WaterInstallation = () => {
       {/* Gallery Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
           <GalleryGrid images={images} />
         </div>
       </section>

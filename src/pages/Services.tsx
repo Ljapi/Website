@@ -49,8 +49,8 @@ const Services = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-6">Unsere Dienstleistungen</h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Unsere Dienstleistungen</h1>
+          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
             Umfassende Lösungen für Ihr Unternehmen
           </p>
         </div>
@@ -59,7 +59,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
               <div key={index} className="animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <ServiceCard {...service} />
@@ -72,15 +72,15 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
             Bereit für den nächsten Schritt?
           </h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-8">
             Kontaktieren Sie uns noch heute und lassen Sie uns gemeinsam Ihre Ziele erreichen.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            className="inline-block bg-blue-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold text-base sm:text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
           >
             Jetzt Kontakt aufnehmen
           </a>
