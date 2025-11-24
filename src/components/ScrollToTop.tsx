@@ -5,9 +5,12 @@ const ScrollToTop = () => {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
+    // Use requestAnimationFrame to ensure smooth scroll after DOM updates
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      })
     })
   }, [pathname])
 
