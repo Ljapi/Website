@@ -61,6 +61,8 @@ const HeatingTechnologies = () => {
                 muted
                 loop
                 playsInline
+                preload="metadata"
+                poster="/services/heating-technologies/heating-1.jpg"
                 className="w-full h-auto object-contain rounded-lg shadow-md bg-transparent"
               >
                 Your browser does not support the video tag.
