@@ -16,8 +16,8 @@ const HeatingTechnologies = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Heating Technologies</h1>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-6">Heating Technologies</h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Moderne Heizungstechnologien für optimale Energieeffizienz
           </p>
         </div>
@@ -27,14 +27,14 @@ const HeatingTechnologies = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Heizungstechnologien</h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Heizungstechnologien</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               Wir installieren und warten moderne Heizungssysteme, die Energie sparen und 
               für angenehme Raumtemperaturen sorgen. Unsere Lösungen reichen von 
               traditionellen Systemen bis hin zu innovativen Wärmepumpen und 
               Solartechnologien.
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               Unser Team berät Sie gerne über die beste Heizungslösung für Ihre 
               individuellen Bedürfnisse und Ihr Budget.
             </p>
@@ -51,10 +51,10 @@ const HeatingTechnologies = () => {
       {/* Gallery Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Video as first element */}
-            <div className="relative bg-transparent w-full overflow-hidden">
+            <div className="relative bg-transparent">
               <video
                 src="/services/heating-technologies/heating-video.mp4"
                 autoPlay
@@ -63,7 +63,7 @@ const HeatingTechnologies = () => {
                 playsInline
                 preload="metadata"
                 poster="/services/heating-technologies/heating-1.jpg"
-                className="w-full h-auto max-w-full object-contain rounded-lg shadow-md bg-transparent"
+                className="w-full h-auto object-contain rounded-lg shadow-md bg-transparent"
               >
                 Your browser does not support the video tag.
               </video>
@@ -72,13 +72,13 @@ const HeatingTechnologies = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer bg-transparent w-full overflow-hidden"
+                className="relative group cursor-pointer bg-transparent"
                 onClick={() => setSelectedImage(image)}
               >
                 <img
                   src={image}
                   alt={`Heating technology project ${index + 1}`}
-                  className="w-full h-auto max-w-full object-contain rounded-lg shadow-md bg-transparent transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-auto object-contain rounded-lg shadow-md bg-transparent transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>

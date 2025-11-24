@@ -5,8 +5,8 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Kontakt</h1>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-6">Kontakt</h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Wir freuen uns auf Ihre Nachricht
           </p>
         </div>
@@ -16,7 +16,7 @@ const Contact = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Kontaktinformationen</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Kontaktinformationen</h2>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <div className="space-y-8">
@@ -62,18 +62,18 @@ const Contact = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="p-4 sm:p-6 md:p-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Visit Our Location</h2>
+            <div className="p-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Visit Our Location</h2>
               <div className="rounded-xl overflow-hidden shadow-md">
                 <iframe
-                  src="https://www.google.com/maps?q=Pariserstraße+4a,+55270+Klein-Winternheim,+Deutschland&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.1234567890!2d8.1234567!3d49.9876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU5JzE1LjYiTiA4wrAwNyc0NS4wIkU!5e0!3m2!1sde!2sde!4v1234567890123!5m2!1sde!2sde"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  className="w-full h-72 md:h-96 rounded-xl"
+                  className="w-full"
                   title="M&N Deine Handwerker Location - Pariserstraße 4a, 55270 Klein-Winternheim"
                 ></iframe>
               </div>

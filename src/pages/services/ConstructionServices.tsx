@@ -17,8 +17,8 @@ const ConstructionServices = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Construction Services</h1>
-          <p className="text-base sm:text-lg md:text-xl text-blue-100 max-w-3xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-6">Construction Services</h1>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Umfassende Bauleistungen von der Planung bis zur Fertigstellung
           </p>
         </div>
@@ -28,13 +28,13 @@ const ConstructionServices = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Bauleistungen</h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Bauleistungen</h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               Als erfahrener Bauunternehmer übernehmen wir alle Aspekte Ihres Bauprojekts. 
               Von der ersten Planung über die Ausführung bis hin zur finalen Übergabe 
               begleiten wir Sie durch jeden Schritt.
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed mb-4">
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
               Wir arbeiten mit hochwertigen Materialien und modernen Bautechniken, 
               um sicherzustellen, dass Ihr Projekt termingerecht und im Budget abgeschlossen wird.
             </p>
@@ -51,18 +51,18 @@ const ConstructionServices = () => {
       {/* Gallery Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer bg-transparent w-full overflow-hidden"
+                className="relative group cursor-pointer bg-transparent"
                 onClick={() => setSelectedImage(image)}
               >
                 <img
                   src={image}
                   alt={`Construction project ${index + 1}`}
-                  className="w-full h-auto max-w-full object-contain bg-transparent rounded-lg shadow-md hover:scale-[1.02] transition-all duration-300"
+                  className="w-full h-auto object-contain bg-transparent rounded-lg shadow-md hover:scale-[1.02] transition-all duration-300"
                   loading="lazy"
                 />
               </div>

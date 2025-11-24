@@ -17,33 +17,33 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 sm:space-x-3 mb-4">
+            <div className="flex items-center space-x-3 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xs">M&N</span>
               </div>
-              <span className="text-lg sm:text-xl font-bold text-white">Deine Handwerker</span>
+              <span className="text-xl font-bold text-white">Deine Handwerker</span>
             </div>
-            <p className="text-xs sm:text-sm text-gray-400 mb-4">
+            <p className="text-sm text-gray-400 mb-4">
               M&N Deine Handwerker
             </p>
-            <p className="text-xs sm:text-sm text-gray-400">
+            <p className="text-sm text-gray-400">
               Professionelle Handwerksdienstleistungen für Ihr Zuhause
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm sm:text-base">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-xs sm:text-sm hover:text-blue-400 transition-colors"
+                    className="text-sm hover:text-blue-400 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -54,19 +54,19 @@ const Footer = () => {
 
           {/* Contact & Legal */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm sm:text-base">Kontakt</h3>
-            <div className="space-y-2 text-xs sm:text-sm mb-6">
+            <h3 className="text-white font-semibold mb-4">Kontakt</h3>
+            <div className="space-y-2 text-sm mb-6">
               <p className="text-gray-400">Email: info@deine-handwerker.gmbh</p>
               <p className="text-gray-400">Tel: 0157 70644323 / 0178 6943354</p>
             </div>
             <div>
-              <h4 className="text-white font-semibold mb-2 text-xs sm:text-sm">Rechtliches</h4>
+              <h4 className="text-white font-semibold mb-2 text-sm">Rechtliches</h4>
               <ul className="space-y-2">
                 {legalLinks.map((link) => (
                   <li key={link.path}>
                     <Link
                       to={link.path}
-                      className="text-xs sm:text-sm hover:text-blue-400 transition-colors"
+                      className="text-sm hover:text-blue-400 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -79,8 +79,8 @@ const Footer = () => {
 
         {/* Social Icons Placeholder */}
         <div className="mt-8 pt-8 border-t border-gray-800">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-xs sm:text-sm text-gray-400 text-center sm:text-left">
+          <div className="flex items-center justify-between">
+            <p className="text-sm text-gray-400">
               © {currentYear} M&N Deine Handwerker. Alle Rechte vorbehalten.
             </p>
             <div className="flex space-x-4">
