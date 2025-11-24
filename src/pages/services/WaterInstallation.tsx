@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import GalleryGrid from '../../components/GalleryGrid'
 
 const WaterInstallation = () => {
   const [images, setImages] = useState<string[]>([])
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   useEffect(() => {
     // Load images from /public/services/water-installation/
@@ -57,8 +57,58 @@ const WaterInstallation = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
-          <GalleryGrid images={images} />
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className="break-inside-avoid mb-4 group cursor-pointer"
+                onClick={() => setSelectedImage(image)}
+              >
+                <img
+                  src={image}
+                  alt={`Water installation project ${index + 1}`}
+                  className="w-full rounded-lg shadow-md bg-transparent object-contain transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* Modal for full-size image view */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 animate-fade-in"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div className="relative max-w-5xl max-h-full">
+              <img
+                src={selectedImage}
+                alt="Selected water installation project"
+                className="max-w-full max-h-[90vh] object-contain rounded-lg"
+              />
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 text-white bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors"
+                aria-label="Close"
+              >
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        )}
       </section>
     </div>
   )

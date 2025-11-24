@@ -52,17 +52,17 @@ const ConstructionServices = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Unsere Projekte</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative group cursor-pointer bg-transparent"
+                className="break-inside-avoid mb-4 group cursor-pointer"
                 onClick={() => setSelectedImage(image)}
               >
                 <img
                   src={image}
                   alt={`Construction project ${index + 1}`}
-                  className="w-full h-auto object-contain bg-transparent rounded-lg shadow-md hover:scale-[1.02] transition-all duration-300"
+                  className="w-full rounded-lg shadow-md bg-transparent object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
